@@ -1,0 +1,25 @@
+{
+  "name": "gllacy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RinAlexx/Gllacy.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RinAlexx/Gllacy/issues"
+  },
+  "homepage": "https://github.com/RinAlexx/Gllacy#readme",
+  "devDependencies": {
+    "browser-sync": "^2.27.11",
+    "gulp": "^4.0.2"
+  },
+  "type": "module"
+}
