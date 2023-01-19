@@ -1,3 +1,29 @@
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/inter-400.woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/inter-700.woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 900;
+    src: url("../fonts/inter-900.woff2");
+    font-display: swap;
+}
+
+/* Общие стили */
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -12,7 +38,56 @@
     overflow: hidden;
 }
 
+.reset-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.button {
+    font-family: "Inter";
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+
+    border: 4px solid rgba(252, 252, 252, 0.4);
+    border-radius: 26px;
+    box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
+}
+
+html {
+    height: 100%;
+}
+
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #2D3440;
+
     background-color: #FEAFC3;
 }
+
+img {
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.main-container {
+    flex-grow: 1;
+}
+
+/* Стили для header */
+
+
+
+
+
+
 
