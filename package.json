@@ -19,6 +19,7 @@
   "homepage": "https://github.com/RinAlexx/Gllacy#readme",
   "devDependencies": {
     "browser-sync": "^2.27.11",
+    "editorconfig": "^1.0.1",
     "gulp": "^4.0.2"
   },
   "type": "module"
