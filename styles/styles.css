@@ -1182,7 +1182,11 @@ img {
     color: #2D3440;
 }
 
-
+.inner-header {
+    margin-top: 16px;
+    font-weight: 900;
+    line-height: 46px;
+}
 
 /* Стили для footer */
 
