@@ -1188,6 +1188,30 @@ img {
     line-height: 46px;
 }
 
+.catalog-form {
+    display: grid;
+    grid-template-columns: 196px 196px 156px 187px;
+    gap: 16px 24px;
+}
+
+.fat-content {
+    grid-column: 3 / -1;
+}
+
+.topping {
+    grid-column: 1 / 4;
+}
+
+.catalog-form-group {
+    font-size: 14px;
+    line-height: 20px;
+
+    border: none;
+}
+
+.catalog-group-title {
+}
+
 /* Стили для footer */
 
 .page-footer {
