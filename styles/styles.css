@@ -325,6 +325,8 @@ img {
     background-image: url("../images/cart-active-icon.svg");
 }
 
+/* Стили для main index.html */
+
 .slide {
     display: none;
 }
@@ -1144,6 +1146,45 @@ img {
     outline-color: rgba(185, 185, 185, 0.3);
     cursor: auto;
 }
+
+/* Стили для main catalog.html */
+
+.breadcrumbs {
+    margin-top: 32px;
+}
+
+.breadcrumbs-list {
+    display: flex;
+}
+
+.breadcrumbs-item:not(:last-child) {
+    padding-right: 8px;
+}
+
+.breadcrumbs-item:not(:last-child)::after {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-left: 8px;
+    vertical-align: middle;
+
+    background-image: url("../images/breadcrumbs-icon.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.breadcrumbs-link {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+
+    color: #2D3440;
+}
+
+
+
+/* Стили для footer */
 
 .page-footer {
     padding-top: 48px;
