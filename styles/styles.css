@@ -1214,6 +1214,11 @@ img {
     padding-left: 16px;
 }
 
+.catalog-form-control,
+.catalog-form-input {
+    cursor: pointer;
+}
+
 .catalog-form-group select {
     padding: 8px 16px;
     padding-right: 63px;
@@ -1225,9 +1230,21 @@ img {
     border: none;
     border-radius: 20px;
 
+    cursor: pointer;
+
     -moz-appearance: none;
     -webkit-appearance: none;
     appearance: none;
+}
+
+.catalog-form-group select:hover {
+    background-color: rgba(252, 252, 252, 0.5);
+}
+
+.catalog-form-group select:active,
+.catalog-form-group select:focus {
+    background-color: rgba(252, 252, 252, 0.4);
+    outline: 2px solid #FCFCFC;
 }
 
 .catalog-fieldset-wrapper {
@@ -1238,6 +1255,38 @@ img {
     border: none;
     border-radius: 20px;
 }
+
+.catalog-form-group {
+    margin: 0;
+    padding: 0;
+}
+
+.range-input {
+    width: 30px;
+    margin-right: 4px;
+    padding-left: 2px;
+    padding-right: 2px;
+    box-sizing: border-box;
+
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: #2D3440;
+
+    border: none;
+    background-color: transparent;
+
+    appearance: none;
+    -moz-appearance: textfield;
+}
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
 
 /* Стили для footer */
 

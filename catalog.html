@@ -101,13 +101,22 @@
                         </fieldset>
 
                         <fieldset class="catalog-form-group">
-                            <legend class="catalog-group-title">Цена: <span>100</span> ₽ – <span>500</span> ₽</legend>
-                            <p class="catalog-fieldset-wrapper"></p>
+                            <legend class="catalog-group-title">Цена: 
+                                <label>
+                                    <span class="visually-hidden">Минимальная цена</span>
+                                    <input style="max-width:46px;" onkeydown="this.style.width = ((this.value.length + 1) * 8) + 'px';" class="range-input" type="number" name="max-price" value="100"><span>₽ - </span>
+                                </label>
+                                <label>
+                                    <span class="visually-hidden">Максимальная цена</span>
+                                    <input style="max-width:46px;" onkeydown="this.style.width = ((this.value.length + 1) * 8) + 'px';" class="range-input" type="number" name="max-price" value="500"><span>₽</span>
+                                </label>
+                            </legend>
+                            <div class="catalog-fieldset-wrapper"></div>
                         </fieldset>
 
                         <fieldset class="catalog-form-group fat-content">
                             <legend class="catalog-group-title">Жирность:</legend>
-                            <p class="catalog-fieldset-wrapper">
+                            <div class="catalog-fieldset-wrapper">
                                 <label class="catalog-form-control">
                                     <input class="catalog-form-input" type="radio" name="product-fat" value="0%">
                                     0%
@@ -124,12 +133,12 @@
                                     <input class="catalog-form-input" type="radio" name="product-fat" value=">30%">
                                     выше 30%
                                 </label>
-                            </p>
+                            </div>
                         </fieldset>
 
                         <fieldset class="catalog-form-group topping">
                             <legend class="catalog-group-title">Наполнители:</legend>
-                            <p class="catalog-fieldset-wrapper">
+                            <div class="catalog-fieldset-wrapper">
                                 <label class="catalog-form-control">
                                     <input class="catalog-form-input" type="checkbox" name="chocolate" checked>
                                     шоколадные
@@ -151,7 +160,7 @@
                                     ">
                                     джемы
                                 </label>
-                            </p>
+                            </div>
                         </fieldset>
 
                         <button class="filter-button button" type="submit">Применить</button>
