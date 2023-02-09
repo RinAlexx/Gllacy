@@ -1203,6 +1203,9 @@ img {
 }
 
 .catalog-form-group {
+    margin: 0;
+    padding: 0;
+
     font-size: 14px;
     line-height: 20px;
 
@@ -1222,6 +1225,11 @@ img {
 .catalog-form-group select {
     padding: 8px 16px;
     padding-right: 63px;
+
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: #2D3440;
 
     background-color: rgba(252, 252, 252, 0.3);
     background-image: url("../images/select-icon.svg");
@@ -1256,11 +1264,6 @@ img {
     border-radius: 20px;
 }
 
-.catalog-form-group {
-    margin: 0;
-    padding: 0;
-}
-
 .range-input {
     width: 30px;
     margin-right: 4px;
@@ -1286,6 +1289,66 @@ img {
     margin: 0;
 }
 
+.range {
+    padding-top: 17px;
+    padding-bottom: 17px;
+}
+
+.range-scale {
+    position: relative;
+    height: 2px;
+
+    background-color: rgba(86, 92, 102, 0.3);
+    /* opacity: 0.3; */
+    border-radius: 2px;
+}
+
+.range-bar {
+    position: absolute;
+    height: 2px;
+
+    background-color: rgba(86, 92, 102, 1);
+}
+
+.range-toggle {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    padding: 0;
+    box-sizing: border-box;
+
+    background-color: #FCFCFC;
+    border: 6px solid #2D3440;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.range-toggle:hover {
+    background-color: #2D3440;
+    border: 6px solid #FCFCFC;
+}
+
+.range-toggle:active {
+    background-color: #2D3440;
+    border: none;
+    outline: none;
+}
+
+.range-toggle:focus {
+    background-color: #2D3440;
+    border: 6px solid #FCFCFC;
+    outline: 2px solid #2D3440;
+}
+
+.toggle-min {
+    top: -7px;
+    left: -7px;
+}
+
+.toggle-max {
+    top: -7px;
+    right: -7px;
+}
 
 
 /* Стили для footer */

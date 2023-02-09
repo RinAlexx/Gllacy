@@ -111,7 +111,18 @@
                                     <input style="max-width:46px;" onkeydown="this.style.width = ((this.value.length + 1) * 8) + 'px';" class="range-input" type="number" name="max-price" value="500"><span>₽</span>
                                 </label>
                             </legend>
-                            <div class="catalog-fieldset-wrapper"></div>
+                            <div class="catalog-fieldset-wrapper range">
+                                <div class="range-scale">
+                                    <div class="range-bar" style="left: 24px; width: 56px">
+                                        <button class="range-toggle toggle-min">
+                                            <span class="visually-hidden">Изменить минимальную цену</span>
+                                        </button>
+                                        <button class="range-toggle toggle-max">
+                                            <span class="visually-hidden">Изменить максимальную цену</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
                         </fieldset>
 
                         <fieldset class="catalog-form-group fat-content">
