@@ -1463,6 +1463,11 @@ img {
     outline-color: #2D3440;
 }
 
+.pagination {
+    display: flex;
+    justify-content: end;
+}
+
 /* Стили для footer */
 
 .page-footer {
