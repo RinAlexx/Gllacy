@@ -1419,6 +1419,22 @@ img {
     opacity: 0.4;
 }
 
+.input-hidden[type="checkbox"] + .catalog-form-input {
+    border-radius: 2px;
+}
+
+.input-hidden[type="checkbox"]:checked + .catalog-form-input {
+    background-image: url("../images/checkbox-icon.svg");
+    border: none;
+}
+
+.input-hidden[type="checkbox"]:checked + .catalog-form-input:hover {
+    background-image: url("../images/checkbox-hover-icon.svg");
+    border: none;
+}
+
+
+
 /* Стили для footer */
 
 .page-footer {
