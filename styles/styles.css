@@ -1411,7 +1411,7 @@ img {
 }
 
 .catalog-form-input:focus {
-    border-color: #FFFFFF;
+    border: 2px solid #FFFFFF;
     outline: none;
 }
 
@@ -1434,6 +1434,34 @@ img {
 }
 
 
+.input-hidden[type="checkbox"]:checked + .catalog-form-input:focus {
+    outline: 2px solid #FFFFFF;
+}
+
+.filter-button {
+    align-self: end;
+    padding-top: 8px;
+    padding-bottom: 8px;
+
+
+    color: #2D3440;
+    font-size: 14px;
+
+    background-color: rgba(252, 252, 252, 0.3);
+    outline: 2px solid #FCFCFC;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.filter-button:hover {
+    background-color: #FCFCFC;
+    outline-color: rgba(252, 252, 252, 0.3);
+}
+
+.filter-button:focus {
+    background-color: rgba(252, 252, 252, 0.3);
+    outline-color: #2D3440;
+}
 
 /* Стили для footer */
 
