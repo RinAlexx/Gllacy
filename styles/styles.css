@@ -1466,7 +1466,91 @@ img {
 .pagination {
     display: flex;
     justify-content: end;
+    align-items: center;
+    margin-top: 57px;
 }
+
+.pagination-show-more {
+    display: block;
+    margin: 0 auto;
+
+    cursor: pointer;
+}
+
+.pagination-show-more:hover {
+    outline: 4px solid #FCFCFC;
+    background-color: rgba(252, 252, 252, 0.4);
+}
+
+.pagination-show-more:focus {
+    outline: 2px solid #2D3440;
+}
+
+.pagination-wrapper {
+    position: absolute;
+    display: flex;
+    align-items: center;
+}
+
+.pagination-control {
+    display: block;
+    width: 16px;
+    height: 16px;
+
+    background-image: url("../images/pagination-arrow.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+ 
+.pagination-previous {
+    margin-right: 8px;
+    transform: rotate(180deg);
+}
+
+.pagination-previous.disabled {
+    opacity: 0.3;
+}
+
+.pagination-next {
+    margin-left: 8px;
+}
+
+.pagination-list {
+    display: flex;
+    padding-left: 8px;
+    padding-right: 8px;
+
+}
+
+.pagination-link {
+    display: block;
+    padding: 2px 8px;
+    color: #2D3440;
+    line-height: 20px;
+
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.pagination-link:hover {
+    background-color: rgba(252, 252, 252, 0.4);
+}
+
+.pagination-link:active {
+    outline: 1px solid #FCFCFC;
+}
+
+.pagination-link:focus {
+    outline: 1px solid #2D3440;
+}
+
+
+
+.pagination-current {
+    background-color: #FCFCFC;
+}
+
+
 
 /* Стили для footer */
 
