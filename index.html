@@ -429,5 +429,31 @@
                 </div>
             </footer>
         </div>
+
+        <div class="modal-container">
+            <div class="modal">
+                <button class="modal-close-button">
+                    <span class="visually-hidden">Закрыть окно</span>
+                </button>
+
+                <section class="modal-content">
+                    <h2 class="visually-hidden">Заполните форму обратной связи</h2>
+                    <p class="modal-text">Мы обязательно ответим вам!</p>
+
+                    <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
+                        <label class="visually-hidden" for="name">Имя и фамилия</label>
+                        <input class="modal-input" type="text" name="name" placeholder="Имя и фамилия">
+
+                        <label class="visually-hidden" for="email">Email для обратной связи</label>
+                        <input class="modal-input" type="email" name="email" placeholder="email@example.com">
+
+                        <label class="visually-hidden" for="question">Задайте ваш вопрос</label>
+                        <textarea class="modal-input" name="question" cols="30" rows="6" placeholder="В свободной форме"></textarea>
+
+                        <button class="modal-button button" type="submit">Отправить</button>
+                    </form>
+                </section>
+            </div>
+        </div>
     </body>
 </html>
