@@ -658,6 +658,10 @@ img {
     margin-top: 107px;
 }
 
+.products > .product-list {
+    margin-top: 96px; /* отступ для страницы каталога */
+}
+
 .product-card {
     position: relative;
     background-color: #FCFCFC;
@@ -1150,7 +1154,7 @@ img {
 /* Стили для main catalog.html */
 
 .breadcrumbs {
-    margin-top: 32px;
+    margin-top: 26px;
 }
 
 .breadcrumbs-list {
@@ -1158,7 +1162,7 @@ img {
 }
 
 .breadcrumbs-item:not(:last-child) {
-    padding-right: 8px;
+    padding-right: 6px;
 }
 
 .breadcrumbs-item:not(:last-child)::after {
@@ -1166,7 +1170,7 @@ img {
     display: inline-block;
     width: 12px;
     height: 12px;
-    margin-left: 8px;
+    margin-left: 6px;
     vertical-align: middle;
 
     background-image: url("../images/breadcrumbs-icon.svg");
@@ -1180,6 +1184,10 @@ img {
     font-weight: 700;
 
     color: #2D3440;
+}
+
+.filter {
+    margin-top: 38px;
 }
 
 .inner-header {
@@ -1263,7 +1271,6 @@ img {
 
 .range-input {
     width: 30px;
-    margin-right: 4px;
     padding-left: 2px;
     padding-right: 2px;
     box-sizing: border-box;
@@ -1349,12 +1356,6 @@ img {
     right: -7px;
 }
 
-/* ДОБАВИТЬ!!!!
-.catalog-form-control, 
-.catalog-form-input {
-    cursor: pointer;
-} */
-
 .catalog-form-control {
     position: relative;
 
@@ -1366,6 +1367,10 @@ img {
 
 .catalog-form-control:last-child {
     margin-right: 0;
+}
+
+.topping > .catalog-fieldset-wrapper > .catalog-form-control:nth-child(2) {
+    margin-right: 26px;
 }
 
 .catalog-form-input {
@@ -1629,4 +1634,4 @@ img {
 
 .copyright-text-link {
     color: inherit;
-}
+} 
