@@ -60,12 +60,79 @@
                         <li class="user-navigation-item">
                             <a class="user-navigation-link user-navigation-search" href="#"><span class="visually-hidden">Поиск</span>
                             </a>
+
+                            <div class="popover popover-search">
+                                <div class="popover-content">
+                                    <label class="popover-title visually-hidden" for="search">Поиск</label>
+                                    <input class="search-input" type="text" name="search" placeholder="Поиск по сайту">
+                                </div>
+                            </div>
                         </li>
                         <li class="user-navigation-item">
                             <a class="user-navigation-link user-navigation-login" href="#">Вход</a>
+                            <div class="popover popover-auth">
+                                <div class="popover-content">
+                                    <h2 class="popover-title">Личный кабинет</h2>
+
+                                    <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
+                                        <label class="visually-hidden" for="auth-email">Электронная почта</label>
+                                        <input class="auth-input" type="email" name="auth-email" placeholder="email@example.com">
+                                        
+                                        <label class="visually-hidden" for="auth-password">Пароль</label>
+                                        <input class="auth-input" type="password" name="auth-password" placeholder="Пароль"> 
+
+                                        <div class="auth-form-wrapper">
+                                            <a class="auth-button button" href="#">Войти</a>
+
+                                            <ul class="auth-list reset-list">
+                                                <li class="auth-item">
+                                                    <a class="auth-link" href="#">Забыли пароль?</a>
+                                                </li>
+                                                <li class="auth-item">
+                                                    <a class="auth-link" href="#">Регистрация</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                    </form>
+                                </div>
+                            </div>
                         </li>
                         <li class="user-navigation-item">
                             <a class="user-navigation-link user-navigation-cart active" href="#"><span class="visually-hidden">Корзина</span><span>2 товара</span></a>
+
+                            <div class="popover popover-cart">
+                                <div class="popover-content cart-full">
+                                    <h2 class="popover-title">Корзина</h2>
+                                    <p class="popover-text">Ваша корзина пока пуста</p>
+                                    <ul class="cart-list reset-list">
+                                        <li class="cart-item">
+                                            <img class="cart-image" src="images/products/product-1.jpg" alt="Мороженое Малинка" width="46" height="46">
+                                            <div class="cart-product-wrapper">
+                                                <h3 class="cart-product-title">Малинка</h3>
+                                                <span class="cart-product-text">1 кг х 310 ₽</span>
+                                            </div>    
+                                            <span class="cart-product-price">310 ₽</span>
+                                            <button class="cart-delete-button"><span class="visually-hidden">Удалить товар</span></button>
+                                        </li>
+
+                                        <li class="cart-item">
+                                            <img class="cart-image" src="images/products/product-4.jpg" alt="Мороженое Бабл-гам" width="46" height="46">
+                                            <div class="cart-product-wrapper">
+                                                <h3 class="cart-product-title">Бабл-гам</h3>
+                                                <span class="cart-product-text">1,5 кг х 320 ₽</span>
+                                            </div>    
+                                            <span class="cart-product-price">480 ₽</span>
+                                            <button class="cart-delete-button"><span class="visually-hidden">Удалить товар</span></button>
+                                        </li>
+                                    </ul>
+
+                                    <div class="cart-footer">
+                                        <a class="cart-button button" href="#">Оформить заказ</a>
+                                        <span class="cart-footer-text">Итого: <span class="cart-footer-price">790</span> ₽</span>
+                                    </div>
+                                </div>
+                            </div>
                         </li>
                     </ul>
                 </nav>
