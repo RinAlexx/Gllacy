@@ -63,8 +63,12 @@
 
                             <div class="popover popover-search">
                                 <div class="popover-content">
-                                    <label class="popover-title visually-hidden" for="search">Поиск</label>
-                                    <input class="search-input" type="text" name="search" placeholder="Поиск по сайту">
+                                    <label class="popover-title" for="search"><span class="visually-hidden">Поиск</span>                                       
+                                    </label>
+                                    <input class="search-input" type="text" name="search" id="search" placeholder="Поиск по сайту">
+                                    <button class="modal-close-button search-close-button" type="button">
+                                        <span class="visually-hidden">Закрыть окно</span>
+                                    </button>
                                 </div>
                             </div>
                         </li>
@@ -76,10 +80,10 @@
 
                                     <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
                                         <label class="visually-hidden" for="auth-email">Электронная почта</label>
-                                        <input class="auth-input" type="email" name="auth-email" placeholder="email@example.com">
+                                        <input class="auth-input" type="email" name="auth-email" id="auth-email" placeholder="email@example.com">
                                         
                                         <label class="visually-hidden" for="auth-password">Пароль</label>
-                                        <input class="auth-input" type="password" name="auth-password" placeholder="Пароль"> 
+                                        <input class="auth-input" type="password" name="auth-password" id="auth-password" placeholder="Пароль"> 
 
                                         <div class="auth-form-wrapper">
                                             <a class="auth-button button" href="#">Войти</a>

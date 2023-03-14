@@ -154,7 +154,7 @@ img {
     box-shadow: none;
 }
 
-.page-navigation-link:active, {
+.page-navigation-link:active {
     background-color: #FCFCFC;
     outline: none;
     box-shadow: none;
@@ -982,13 +982,69 @@ img {
     gap: 20px 16px;
 }
 
-.delivery-form label {
+.delivery-form-label {
     display: flex;
     flex-direction: column;
 
     font-weight: 700;
     line-height: 20px;
     color: #2D3440;
+}
+
+.tooltip {
+    position: absolute;
+
+    width: 14px;
+    height: 14px;
+    margin-top: 2px;
+    margin-left: 4px;
+}
+
+.tooltip-toggle {
+    padding: 0;
+    margin: 0;
+
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.tooltip-text {
+    position: absolute;
+    top: -8px;
+    left: 25px;
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #565C66;
+
+    display: none;
+    width: 162px;
+    padding: 10px 8px;
+
+    background-color: #FFFFFF;
+    border: 1px solid #B9B9B9;
+    border-radius: 1px;
+    box-shadow: 0px 4px 8px rgba(194, 194, 194, 0.2);
+}
+
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text {
+  display: block;
+}
+
+.tooltip-text::before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    background-color: #FFFFFF;
+    border: 1px solid #B9B9B9;
+    border-top: none;
+    border-right: none;
+    transform: rotate(45deg);
+    left: -7px;
 }
 
 .delivery-form input {
@@ -1796,6 +1852,10 @@ img {
     line-height: 30px;
 }
 
+.popover-title.visually-hidden {
+    margin-bottom: 0;
+}
+
 .popover-text {
     display: block;
     width: 192px;
@@ -1966,15 +2026,15 @@ img {
 
 .search-close-button {
     position: absolute;
-    right: 13px;
-    top: 8px;
+    right: 30px;
+    top: 40px;
 
     display: none;
 
     opacity: 0.6;
 }
 
-.search-input:active + .search-close-button {
+.search-input:active .search-close-button {
     display: block;
 }
 
